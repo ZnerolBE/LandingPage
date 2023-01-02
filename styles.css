@@ -155,15 +155,16 @@ section#hero {
 }
 
 section#featured {
-    padding: 5rem;
     color: var(--features-text);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    width: 100%;
+    gap: 2rem;
 }
 
 #featured h2 {
+    margin-top: 5rem;
     font-weight: 700;
     font-size: 2.25rem;
     display: flex;
@@ -179,4 +180,26 @@ section#featured {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img {
+    border-radius: 1.5rem;
+    border: .25rem solid var(--button-color);
+    width: 10rem;
+    margin-bottom: 1rem;
+    filter: saturate(0%);
+}
+
+.card img:hover {
+    filter: saturate(100%);
+}
+
+.card p {
+    color: var(--features-text);
+    font-size: 0.75rem;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 5rem;
 }
