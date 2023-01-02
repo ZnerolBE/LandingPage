@@ -229,6 +229,7 @@ section#quotes {
 #quotes p.quote {
     width: 70%;
     font-size: 2.25rem;
+    font-weight: 200;
     font-style: italic;
 }
 
@@ -242,4 +243,65 @@ section#quotes {
 #quotes p.quote:before,
 #quotes p.quote:after {
     content: '"'
+}
+
+section#cta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#cta .calltoaction .container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 3;
+}
+
+#cta .calltoaction {
+    background: var(--button-color);
+    color: var(--hero-text);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-radius: 1.5rem;
+}
+
+#cta .calltoaction h3{
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+#cta .calltoaction button{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 0.5;
+    background: var(--button-color);
+    color: var(--hero-text);
+    font-weight: 700;
+    border-radius: 1.5rem;
+    border: .15rem var(--hero-text) solid;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+
+#cta .calltoaction button:hover{
+    cursor: pointer;
 }
