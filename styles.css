@@ -81,6 +81,15 @@ body {
 nav {
     display: flex;
     background-color: var(--dark-bg-color);
+    padding: 1rem;
+    color: var(--hero-text);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 3rem;
+    font-weight: 900;
 }
 
 nav ul {
