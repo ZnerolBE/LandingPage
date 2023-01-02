@@ -81,18 +81,58 @@ body {
 nav {
     display: flex;
     background-color: var(--dark-bg-color);
-    padding: 1rem;
+    padding: 1rem 5rem;
     color: var(--hero-text);
     justify-content: space-between;
     align-items: center;
 }
 
 nav .logo {
-    font-size: 3rem;
-    font-weight: 900;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 nav ul {
     display: flex;
     gap: 1rem;
+}
+
+section#hero {
+    padding: 5rem;
+    background-color: var(--dark-bg-color);
+    color: var(--hero-text);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+#hero p {
+    font-size: 1.125rem;
+    color: var(--hero-secondary-text);
+}
+
+.hero-img {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.hero-img img {
+    border-radius: 2rem;
 }
