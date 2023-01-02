@@ -48,10 +48,42 @@ table {
 
 /* 
 
+VARIABLES
+
+*/
+
+:root {
+    --dark-bg-color: #1F2937;
+    --hero-text: #F9FAF8;
+    --hero-secondary-text: #E5E7EB;
+
+    --button-color: #3882F6;
+
+    --features-text: #1F2937;
+
+    --quote-bg-color: #E5E7EB;
+    --quote-text: #1F2937;
+
+  }
+  
+
+
+/* 
+
 STYLES ADDED
 
 */
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: var(--dark-bg-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
 }
