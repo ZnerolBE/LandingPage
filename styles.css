@@ -203,3 +203,43 @@ section#featured {
     text-align: center;
     margin-bottom: 5rem;
 }
+
+section#quotes {
+    background: var(--quote-bg-color);
+    color: var(--quote-text);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#quotes .container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#quotes p.quote {
+    width: 70%;
+    font-size: 2.25rem;
+    font-style: italic;
+}
+
+#quotes p.author {
+    font-size: 1rem;
+    font-weight: 700;
+    align-self: flex-end;
+    margin-right: 3rem;
+}
+
+#quotes p.quote:before,
+#quotes p.quote:after {
+    content: '"'
+}
